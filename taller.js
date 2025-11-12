@@ -238,7 +238,7 @@ function variosPrimos() {
     let primo = [];
     for (let c = 0; c < numeros.length; c++) {
         const v = new tallerDos(numeros[c])
-        if (t.numeroPrimo()) primo.push(numeros[c].numero)
+        if (v.numeroPrimo()) primo.push(numeros[c].numero)
     }
     console.log(`Numeros primos:`, primo)
 }
@@ -269,7 +269,7 @@ function variosInvertir() {
         console.log(`-----------`)
     }
  }
- function variosSumasduvisores(){
+ function variosSumasdivisores(){
     numeros = [
     {"numero": 2, "veces": 4},
     {"numero": 3, "veces": 4},
