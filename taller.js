@@ -194,17 +194,106 @@ function paresFibonacci() {
     const numeros = [{ numero: 5 }, { numero: 8 }, { numero: 10 }]
     for (let c = 0; c < numeros.length; c++) {
         let Fibonacci = new tallerDos(numeros[c])
-        Fibonacci.serieFibonacci()
+        Fibonacci.serieFibonacci();
         console.log(`------------------`)
     }
 }
 function variosDivisores() {
     const numeros = [{ numero: 6 }, { numero: 12 }, { numero: 28 }]
     for (let c = 0; c < numeros.length; c++) {
-        let divisores = new tallerDos(numeros[c])
-        divisores.divisores()
+        let d = new tallerDos(numeros[c])
+        const lista = d.divisores();
+        console.log(`Divisores guardados:`, lista)
+        console.log(`------------`)
 
 
     }
 
 }
+function variosSuma() {
+    const numeros = [{ numero: 6 }, { numero: 12 }, { numero: 28 }]
+    for (let c = 0; c < numeros.length; c++) {
+        let x = new tallerDos(numeros[c])
+        const soma = x.sumaDivisores();
+        console.log(`resultado:`, soma)
+        console.log(`--------------`)
+
+    }
+
+}
+function variosPerfectos() {
+    const numeros = [{ numero: 6 }, { numero: 10 }, { numero: 28 }, { numero: 30 }]
+    let perfecto = [];
+    for (let c = 0; c < numeros.length; c++) {
+        const t = new tallerDos(numeros[c])
+        if (t.numeroPerfecto()) perfecto.push(numeros[c].numero)
+
+    }
+    console.log(`Perfectos:`, perfecto)
+
+}
+
+function variosPrimos() {
+    const numeros = [{ numero: 5 }, { numero: 6 }, { numero: 7 }, { "numero": 8 }, { "numero": 11 }]
+    let primo = [];
+    for (let c = 0; c < numeros.length; c++) {
+        const v = new tallerDos(numeros[c])
+        if (t.numeroPrimo()) primo.push(numeros[c].numero)
+    }
+    console.log(`Numeros primos:`, primo)
+}
+function variosInvertir() {
+    const numeros = [{ numero: 123 }, { numero: 456 }, { numero: 780 }]
+    for (let c = 0; c < numeros.length; c++) {
+    let x=new tallerDos(numeros[c])
+    let invertir=x.invertirNumero();
+    console.log(`guardado:`, invertir)
+    console.log(`-----------`)
+    }
+}
+ function variosDigitos(){
+  const  numeros = [{numero: 45}, {numero: 678}, {numero: 12345}]
+    for(let c=0;c<numeros.length;c++){
+        let z=new tallerDos( numeros[c])
+        let digitos=z.contarDigitos();
+        console.log(`Guardado:`,digitos)
+        console.log(`-----------`)
+    }
+ }
+ function variosFactoriales(){
+   const numeros = [{numero: 3}, {numero: 4}, {numero: 5}]
+    for(let c=0;c<numeros.length;c++){
+        let x= new tallerDos(numeros[c])
+        let factorial=x.factoriales();
+        console.log(`Numero guardado:`,factorial)
+        console.log(`-----------`)
+    }
+ }
+ function variosSumasduvisores(){
+    numeros = [
+    {"numero": 2, "veces": 4},
+    {"numero": 3, "veces": 4},
+    {"numero": 4, "veces": 4}
+]
+for(let c=0;c<numeros.length;c++){
+    let t=new tallerDos(numeros[c])
+    let divisores=t.multiplicarVeces();
+    console.log(`Numeros guardados:`,divisores)
+    console.log(`------------`)
+}
+
+ }
+ function variosRestar(){
+  const  numeros = [
+    {numero: 15, numero2: 4},
+    {numero: 22, numero2: 4},
+    {numero: 30, numero2: 4}
+]
+for(let c=0;c<numeros.length;c++){
+    let x=new tallerDos(numeros[c])
+    let resta=x.restar();
+    console.log(`Numeros guardado:`, resta)
+    console.log(`-------------------`)
+}
+
+ }
