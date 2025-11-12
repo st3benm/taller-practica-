@@ -168,27 +168,46 @@ class tallerDos {
         return numero
     }
 }
-
+function uno(){
 let ejer1 = new tallerDos({ numero: 8 })
 ejer1.serieFibonacci();
+}
+function dos(){
 let ejer2 = new tallerDos({ numero: 12 })
 ejer2.divisores();
+}
+function tres(){
 let ejer3 = new tallerDos({ numero: 12 })
 ejer3.sumaDivisores();
+}
+function cuatro(){
 let ejer4 = new tallerDos({ numero: 6 })
 ejer4.numeroPerfecto();
+}
+function cinco(){
 let ejer5 = new tallerDos({ numero: 11 })
 ejer5.numeroPrimo();
+}
+function seis(){
 let ejer6 = new tallerDos({ numero: 1234 })
 ejer6.invertirNumero();
+}
+function siete(){
 let ejer7 = new tallerDos({ numero: 9876 })
 ejer7.contarDigitos();
+}
+function ocho(){
 let ejer8 = new tallerDos({ numero: 5 })
 ejer8.factoriales();
+}
+function nueve(){
 let ejer9 = new tallerDos({ numero: 3, veces: 4 })
 ejer9.multiplicarVeces();
+}
+function diez(){
 let ejer10 = new tallerDos({ numero: 5, numero2: 4 })
 ejer10.restar();
+}
 
 function paresFibonacci() {
     const numeros = [{ numero: 5 }, { numero: 8 }, { numero: 10 }]
