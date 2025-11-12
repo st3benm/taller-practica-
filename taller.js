@@ -15,7 +15,7 @@ class tallerDos {
 
         lista.push(a)
         if (numero > 1) lista.push(b)
-        for (let i = 3; i <= this.numeros; i++) {
+        for (let i = 3; i <=numero ; i++) {
             c = a + b
             lista.push(c)
             a = b;
@@ -209,7 +209,7 @@ let ejer10 = new tallerDos({ numero: 5, numero2: 4 })
 ejer10.restar();
 }
 
-function paresFibonacci() {
+function variosFibonacci() {
     const numeros = [{ numero: 5 }, { numero: 8 }, { numero: 10 }]
     for (let c = 0; c < numeros.length; c++) {
         let Fibonacci = new tallerDos(numeros[c])
