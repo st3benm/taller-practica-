@@ -15,7 +15,7 @@ class tallerDos {
 
         lista.push(a)
         if (numero > 1) lista.push(b)
-        for (let i = 3; i <=numero ; i++) {
+        for (let i = 3; i <= numero; i++) {
             c = a + b
             lista.push(c)
             a = b;
@@ -106,7 +106,7 @@ class tallerDos {
             let digito = numero % 10;
             lista.push(digito)
             invertido = invertido * 10 + digito
-            numero = Math.floor(numero / 10)
+            numero = parseInt(numero / 10)
 
         }
         console.log(`Numero invertido es ${invertido}`)
@@ -168,45 +168,45 @@ class tallerDos {
         return numero
     }
 }
-function uno(){
-let ejer1 = new tallerDos({ numero: 8 })
-ejer1.serieFibonacci();
+function uno() {
+    let ejer1 = new tallerDos({ numero: 8 })
+    ejer1.serieFibonacci();
 }
-function dos(){
-let ejer2 = new tallerDos({ numero: 12 })
-ejer2.divisores();
+function dos() {
+    let ejer2 = new tallerDos({ numero: 12 })
+    ejer2.divisores();
 }
-function tres(){
-let ejer3 = new tallerDos({ numero: 12 })
-ejer3.sumaDivisores();
+function tres() {
+    let ejer3 = new tallerDos({ numero: 12 })
+    ejer3.sumaDivisores();
 }
-function cuatro(){
-let ejer4 = new tallerDos({ numero: 6 })
-ejer4.numeroPerfecto();
+function cuatro() {
+    let ejer4 = new tallerDos({ numero: 6 })
+    ejer4.numeroPerfecto();
 }
-function cinco(){
-let ejer5 = new tallerDos({ numero: 11 })
-ejer5.numeroPrimo();
+function cinco() {
+    let ejer5 = new tallerDos({ numero: 11 })
+    ejer5.numeroPrimo();
 }
-function seis(){
-let ejer6 = new tallerDos({ numero: 1234 })
-ejer6.invertirNumero();
+function seis() {
+    let ejer6 = new tallerDos({ numero: 1234 })
+    ejer6.invertirNumero();
 }
-function siete(){
-let ejer7 = new tallerDos({ numero: 9876 })
-ejer7.contarDigitos();
+function siete() {
+    let ejer7 = new tallerDos({ numero: 9876 })
+    ejer7.contarDigitos();
 }
-function ocho(){
-let ejer8 = new tallerDos({ numero: 5 })
-ejer8.factoriales();
+function ocho() {
+    let ejer8 = new tallerDos({ numero: 5 })
+    ejer8.factoriales();
 }
-function nueve(){
-let ejer9 = new tallerDos({ numero: 3, veces: 4 })
-ejer9.multiplicarVeces();
+function nueve() {
+    let ejer9 = new tallerDos({ numero: 3, veces: 4 })
+    ejer9.multiplicarVeces();
 }
-function diez(){
-let ejer10 = new tallerDos({ numero: 5, numero2: 4 })
-ejer10.restar();
+function diez() {
+    let ejer10 = new tallerDos({ numero: 5, numero2: 4 })
+    ejer10.restar();
 }
 
 function variosFibonacci() {
@@ -264,55 +264,55 @@ function variosPrimos() {
 function variosInvertir() {
     const numeros = [{ numero: 123 }, { numero: 456 }, { numero: 780 }]
     for (let c = 0; c < numeros.length; c++) {
-    let x=new tallerDos(numeros[c])
-    let invertir=x.invertirNumero();
-    console.log(`guardado:`, invertir)
-    console.log(`-----------`)
+        let x = new tallerDos(numeros[c])
+        let invertir = x.invertirNumero();
+        console.log(`guardado:`, invertir)
+        console.log(`-----------`)
     }
 }
- function variosDigitos(){
-  const  numeros = [{numero: 45}, {numero: 678}, {numero: 12345}]
-    for(let c=0;c<numeros.length;c++){
-        let z=new tallerDos( numeros[c])
-        let digitos=z.contarDigitos();
-        console.log(`Guardado:`,digitos)
+function variosDigitos() {
+    const numeros = [{ numero: 45 }, { numero: 678 }, { numero: 12345 }]
+    for (let c = 0; c < numeros.length; c++) {
+        let z = new tallerDos(numeros[c])
+        let digitos = z.contarDigitos();
+        console.log(`Guardado:`, digitos)
         console.log(`-----------`)
     }
- }
- function variosFactoriales(){
-   const numeros = [{numero: 3}, {numero: 4}, {numero: 5}]
-    for(let c=0;c<numeros.length;c++){
-        let x= new tallerDos(numeros[c])
-        let factorial=x.factoriales();
-        console.log(`Numero guardado:`,factorial)
+}
+function variosFactoriales() {
+    const numeros = [{ numero: 3 }, { numero: 4 }, { numero: 5 }]
+    for (let c = 0; c < numeros.length; c++) {
+        let x = new tallerDos(numeros[c])
+        let factorial = x.factoriales();
+        console.log(`Numero guardado:`, factorial)
         console.log(`-----------`)
     }
- }
- function variosSumasdivisores(){
+}
+function variosSumasdivisores() {
     numeros = [
-    {"numero": 2, "veces": 4},
-    {"numero": 3, "veces": 4},
-    {"numero": 4, "veces": 4}
-]
-for(let c=0;c<numeros.length;c++){
-    let t=new tallerDos(numeros[c])
-    let divisores=t.multiplicarVeces();
-    console.log(`Numeros guardados:`,divisores)
-    console.log(`------------`)
-}
+        { "numero": 2, "veces": 4 },
+        { "numero": 3, "veces": 4 },
+        { "numero": 4, "veces": 4 }
+    ]
+    for (let c = 0; c < numeros.length; c++) {
+        let t = new tallerDos(numeros[c])
+        let divisores = t.multiplicarVeces();
+        console.log(`Numeros guardados:`, divisores)
+        console.log(`------------`)
+    }
 
- }
- function variosRestar(){
-  const  numeros = [
-    {numero: 15, numero2: 4},
-    {numero: 22, numero2: 4},
-    {numero: 30, numero2: 4}
-]
-for(let c=0;c<numeros.length;c++){
-    let x=new tallerDos(numeros[c])
-    let resta=x.restar();
-    console.log(`Numeros guardado:`, resta)
-    console.log(`-------------------`)
 }
+function variosRestar() {
+    const numeros = [
+        { numero: 15, numero2: 4 },
+        { numero: 22, numero2: 4 },
+        { numero: 30, numero2: 4 }
+    ]
+    for (let c = 0; c < numeros.length; c++) {
+        let x = new tallerDos(numeros[c])
+        let resta = x.restar();
+        console.log(`Numeros guardado:`, resta)
+        console.log(`-------------------`)
+    }
 
- }
+}
